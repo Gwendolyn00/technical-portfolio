@@ -1,6 +1,3 @@
-# technical-portfolio
-Technical projects showcasing automation, API integration, and workflow solutions
-
 # Technical Portfolio
 
 Hi! I'm a technical professional with some experience building automation solutions, implementing SaaS platforms, and enabling users to succeed with technology.

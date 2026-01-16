@@ -181,12 +181,12 @@ Now you'll have a custom menu in your spreadsheet!
 
 ### Import Events
 1. Enter filter criteria in cells C2-C5 (at least year in C2)
-2. Run `importGoogleCalendar()` or click "Import Events" button
+2. Run `importGoogleCalendar()` or click "Enter" button that has the `importGoogleCalendar()` script assigned
 3. Wait up to 60 seconds depending on number of events
 4. View filtered results starting at row 42
 
 ### Clear Everything
-1. Run `clearCalendarEvents()` or click "Clear" button
+1. Run `clearCalendarEvents()` or click "Clear" button that has the `clearCalendarEvents()` script assigned
 2. All event data and filters will be cleared
 
 ## Impact & Results
@@ -196,12 +196,11 @@ Now you'll have a custom menu in your spreadsheet!
 - **Response Time:** Improved by identifying high-need locations
 
 ### Business Insights Enabled
-- Identified that 3 specific rooms generated 40% of all support requests
+- Identified that specific support requests for each building
 - Discovered peak support hours for better staffing
 - Tracked recurring issues to prioritize equipment upgrades
 
 ### User Adoption
-- 60+ faculty and staff can now self-serve support data
 - Non-technical users can run reports with a button click
 - Team uses dashboard for weekly planning meetings
 
@@ -220,40 +219,27 @@ Now you'll have a custom menu in your spreadsheet!
 - **Iterative Development:** Started simple, added features based on feedback
 
 ### Best Practices I Applied
-- **Logging:** Added Logger statements for debugging
-- **Inline Comments:** Explained complex logic for future maintainers
+- **Logging:** Added comments for debugging explained logic for future maintainers
 - **Error Prevention:** Validated date inputs before making API calls
 - **Data Cleanup:** Clear old data before importing new to prevent duplicates
 
 ## Limitations & Future Improvements
 
 ### Current Limitations
-- Filtering keywords are hardcoded (need to edit script to change)
+- Filtering keywords are hardcoded (need to edit script to add/remove keywords)
 - No automated scheduling (users must click button)
-- Limited to one calendar at a time
 - No historical trend analysis built in
 
 ### Future Enhancements I'd Add
 - [ ] Automated daily import using time-based triggers
 - [ ] Configurable filter keywords in spreadsheet cells
-- [ ] Multi-calendar support for different teams
 - [ ] Pivot tables and charts for visual analysis
-- [ ] Email notifications for high-volume support days
+- [ ] Email notifications for weekly or monnthly reports
 - [ ] Export to CSV for external reporting
 
 ## Files
 - `calendar-import.js` - Main Google Apps Script code
 - `README.md` - This documentation
 
-## Author
-[Your Name]
-- **LinkedIn:** [your-linkedin-url]
-- **Email:** [your-email]
-- **Portfolio:** [github.com/yourusername]
-
 ## License
 This project is for educational and portfolio purposes. Code may be used and modified with attribution.
-
----
-
-*This dashboard has been running in production since [Month Year] and processes ~[X] support events per month for Columbia Law School's AV support team.*

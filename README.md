@@ -24,7 +24,7 @@ Hi! I'm a technical professional with some experience building automation soluti
 - **Impact:** 50% reduction in inquiry response time
 
 ### 3. ServiceNow Loaner Vehicle System
-[View Project →](process_diagram/servicenow_loan_app.md)
+[View Project →](./servicenow-loan-app)
 - **Tech Stack:** ServiceNow (Flow Designer, Business Rules, Service Portal)
 - **Problem Solved:** Manual vehicle request and inventory tracking
 - **Solution:** End-to-end automated system with approvals, workflows, and portal

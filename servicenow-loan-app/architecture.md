@@ -219,4 +219,4 @@ Status Mapping:
  * Create dashboards
  * Integrate calendar for availability
 
-[ <- Back to previous page](/servicenowloan-app)
+[ <- Back to previous page](/servicenow-loan-app/README.md)

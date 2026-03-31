@@ -138,3 +138,5 @@ loaner-vehicle-app/
 **Timeline:** 3 Sprints
 
 **Certification:** ServiceNow Certified System Administrator (CSA)
+
+[View Architeture -> ](./architeture.md)

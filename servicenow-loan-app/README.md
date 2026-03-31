@@ -3,7 +3,7 @@
 ## Overview
 **Problem:** Operation faves the following challenges managing loaner vehicle reuests:
 - Manual process via email leads to confusing and lost requests
-- No visisbility on vehicle availbility or loction status
+- No visibility on vehicle availbility or loction status
 - Double-booking incidents due to lack of centralized tracking
 - Inefficient workflows
 

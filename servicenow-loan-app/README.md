@@ -139,4 +139,4 @@ loaner-vehicle-app/
 
 **Certification:** ServiceNow Certified System Administrator (CSA)
 
-[View Architeture -> ](servicenow-loan-app/architecture.md)
+[View Architeture -> ](./servicenow-loan-app/architecture.md)

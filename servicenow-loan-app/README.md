@@ -91,29 +91,50 @@ Server-side buttons for streamlined operations:
  * **Send to Repair:** createsservicing ticket when repairs needed
  * display messages based on status and user role
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Loaner Vehicle Request Flow**
+## Impact
+### Operational Improvements
+ * Eliminated doble-booking through real time availability checking
+ * Reduced processing time via automated workflows
+ * Enhanced visibility through centralized tracking dashboard
 
-```mermaid
-flowchart TD
-    Start([User submits Loaner Request Form]) --> Task1[Tracker Record is created]
-    Task1 --> Decision{Approved?}
-    Decision -- Yes --> Event1a[Delivery Task Created]
-    Event1a --> Event2a[Item Record Updated to Closed]
-    Event2a --> Event3a[Vehicle Tracker Record Updated to Out on Field]
-    Event3a --> End([Process End])
-    Decision -- No --> Event1b[Item Record Updated to Closed Imcomplete]
-    Event1b --> Event2b[Vehicle Tracker Record UPdated to Returned to Warehouse]
-    Event2b --> End([Process End])
+### Compliance & Governance
+ * Full audit trail for all vehicle movements and status changees
+ * Document chain of custody from request though return
+ * Servicing history for maintenance compliance
+ * User activity logging for security and accountability
+
+## Project Structure
+```
+loaner-vehicle-app/
+├── Tables/
+│   ├── Loaner Vehicle Catalog
+│   ├── Vehicle Tracker
+│   └── Vehicle Servicing
+├── Service Catalog/
+│   └── Request Loaner Vehicle (Catalog Item)
+├── Workflows/
+│   └── Approval & Notification Flows
+├── UI Components/
+│   ├── UI Policies (Dynamic field behavior)
+│   └── UI Actions (Custom buttons)
+├── Security/
+│   ├── Roles (lva_user, servicing_team)
+│   └── ACLs (Table and field-level permissions)
+└── Navigation/
+    └── Application Menus & Modules
 ```
 
-**Rescheduled Return Loaner Vehicle Flow**
+## Skills Demonstrated
+ * Scoped a[[lication Developemnt
+ * Data Modeling
+ * Workflow Automation
+ * Service Catalog
+ * UI/UX Design
+ * Business Logic
+ * Integration
 
-```mermaid
-flowchart TD
-    Start([User submits a Rescheduled Return Form]) --> Task1[Requested Item is created]
-    Task1 --> Decision{Approved?}
-    Decision -- Yes --> Event1[Update Tracker record witht he new return dates]
-    Event1 --> Event2[Send Automated Confirmation Email]
-    Event2 --> End1([Process End])
-```
+## About This Project
+**Role:** Servicenow Developer
+**Timeline:** 3 Sprints
+
+**Certification:** ServiceNow Certified System Administrator (CSA)
